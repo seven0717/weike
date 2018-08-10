@@ -1,7 +1,0 @@
-export const COOLLECT_MENU = 'COOLLECT_MENU'
-export const CANCEL_MENU = 'CANCEL_MENU'
-export const BKB_LOGIN = 'BKB_LOGIN'
-export const BKB_LOGOUT = 'BKB_LOGOUT'
-export const LOGIN_FAILE = 'LOGIN_FAILE'
-export const BKB_MOREMENU = 'BKB_MOREMENU'
-export const LOADING_STATE = 'LOADING_STATE'
