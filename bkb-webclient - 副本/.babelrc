@@ -1,0 +1,24 @@
+//文件说明: 
+//  在工程根目录.babelrc (rc结尾的文件通常代表运行时自动加载的文件)文件,这个文件是用来设置转码的规则和插件的,
+//  在babel6中，这个文件必不可少
+
+{
+  //presets 字段是用来设定转码规则, 具体看官方的   https://babeljs.io/docs/plugins/
+  "presets": [
+    [
+      "es2015", //如果想使用es6语法，必须安装插件
+      { "modules": false }
+    ]
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-vue-jsx",
+    ["component", 
+      [{
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-default"
+      }]
+    ]
+  ]
+}
