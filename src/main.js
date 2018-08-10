@@ -8,7 +8,7 @@ import router from './router'
 import vuex from 'vuex'
 import Axios from 'axios';
 import { Button,Tabs,TabPane,Row,Col,Form,FormItem,Input,Message,Switch,Container,Header,Main,Footer,Dropdown, DropdownMenu,
-          DropdownItem,Radio,RadioGroup,RadioButton, } from 'element-ui';
+          DropdownItem,Radio,RadioGroup,RadioButton,Card } from 'element-ui';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import 'element-ui/lib/theme-chalk/index.css';
@@ -32,6 +32,7 @@ Vue.use(DropdownItem)
 Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(RadioButton)
+Vue.use(Card)
 Vue.prototype.$axios = Axios;
 Vue.prototype.$message = Message;
 
