@@ -73,7 +73,7 @@
         </el-col>
         <el-col :xs="12" :sm="12" :md="12" :lg="12" style="margin-top:30px">
           <div>
-            <el-radio-group v-model="radio1" @change="radio1_1">
+            <el-radio-group v-model="radio1" @change="radio1_1" size="medium">
               <el-radio-button label="全部课程"></el-radio-button>
               <el-radio-button label="产品介绍"></el-radio-button>
               <el-radio-button label="使用教程"></el-radio-button>
@@ -93,7 +93,9 @@
           <el-row :gutter="20">
             <el-col :xs="24" :sm="12" :md="6" :lg="6">
               <div class="bg-purple">
-                <div class="imgs">1</div>
+                <div class="imgs">
+                  <img src="../../assets/111.jpg" alt="">
+                </div>
                 <div class="titles">使用教程</div>
                 <div class="moneys">
                   <el-row>
@@ -106,7 +108,9 @@
             </el-col>
             <el-col :xs="24" :sm="12" :md="6" :lg="6">
               <div class="bg-purple">
-                <div class="imgs">1</div>
+                <div class="imgs">
+                  <img src="../../assets/111.jpg" alt="">
+                </div>
                 <div class="titles">使用教程</div>
                 <div class="moneys">
                   <el-row>
@@ -119,7 +123,9 @@
             </el-col>
             <el-col :xs="24" :sm="12" :md="6" :lg="6">
               <div class="bg-purple">
-                <div class="imgs">1</div>
+                <div class="imgs">
+                  <img src="../../assets/111.jpg" alt="">
+                </div>
                 <div class="titles">使用教程</div>
                 <div class="moneys">
                   <el-row>
@@ -132,7 +138,9 @@
             </el-col>
             <el-col :xs="24" :sm="12" :md="6" :lg="6">
               <div class="bg-purple">
-                <div class="imgs">1</div>
+                <div class="imgs">
+                  <img src="../../assets/111.jpg" alt="">
+                </div>
                 <div class="titles">使用教程</div>
                 <div class="moneys">
                   <el-row>
@@ -259,13 +267,101 @@
             </el-col>
           </el-row>
         </el-row>
-        <!-- 推荐 -->
-        <!-- 推荐 -->
       </el-row>
+      <!-- 推荐 -->
+      <el-row>
+        <el-row>
+          <el-col>
+            <div>
+              <h5 style="font-size:32px; font-weight:400;padding:20px 0 10px 0">推荐教师</h5>
+              <p class="vice">名师汇集，保证教学质量与学习效果。</p>
+            </div>
+          </el-col>
+        </el-row >
+        <el-row class="teacher_s">
+          <el-row :gutter="20">
+          <el-col :xs="24" :sm="12" :md="6" :lg="6" style="margin-top:10px;">
+            <div class="teachers">
+              <div class="teachers_nick">
+                <div>
+                  <img src="../../assets/nick.jpg" alt="" class="teachers_nicks">
+                </div>
+                <p style="font-weight:700;">Phil</p>
+                  <p style="color:#919191;font-size:14px">阔知网络联合创始人</p>
+              </div>
+              <div style="color:#919191;font-size:14px">主要负责好知网的运营工作。 英国卡迪夫大学新闻学硕士，原浙江...</div>
+            </div>
+          </el-col>
+          <el-col :xs="24" :sm="12" :md="6" :lg="6" style="margin-top:10px;">
+            <div class="teachers">
+              <div class="teachers_nick">
+                <div>
+                  <img src="../../assets/nick.jpg" alt="" class="teachers_nicks">
+                </div>
+                <p style="font-weight:700;">Phil</p>
+                  <p style="color:#919191;font-size:14px">阔知网络联合创始人</p>
+              </div>
+              <div style="color:#919191;font-size:14px">主要负责好知网的运营工作。 英国卡迪夫大学新闻学硕士，原浙江...</div>
+            </div>
+          </el-col>
+        </el-row>
+        </el-row>
+        <el-row>
+          <el-col>
+            <el-button>更多教师<i class="el-icon-arrow-right"></i></el-button>
+          </el-col>
+      </el-row>
+      </el-row>
+      <!-- 推荐 -->
+      <!-- 链接 -->
+      <el-row class="links">
+        <el-row class="">
+         <el-row>
+           <el-col :span="14">
+             <el-row type="flex" justify="space-around" style="margin:20px 0;">
+               <el-col>我是学生</el-col>
+               <el-col >我是老师</el-col>
+               <el-col>我是管理员</el-col>
+               <el-col>商业应用</el-col>
+               <el-col>关于我们</el-col>
+             </el-row>
+             <el-row type="flex" justify="space-around" style="margin:20px 0;">
+               <el-col>如何注册</el-col>
+               <el-col>发布课程</el-col>
+               <el-col>修改底部链接</el-col>
+               <el-col>会员专区</el-col>
+               <el-col>ES官网</el-col>
+             </el-row>
+             <el-row type="flex" justify="space-around" style="margin:20px 0;">
+               <el-col>我是学生</el-col>
+               <el-col>我是老师</el-col>
+               <el-col>我是管理员</el-col>
+               <el-col>商业应用</el-col>
+               <el-col>关于我们</el-col>
+             </el-row>
+             <el-row type="flex" justify="space-around" style="margin:20px 0;">
+               <el-col>我是学生</el-col>
+               <el-col>我是老师</el-col>
+               <el-col>我是管理员</el-col>
+               <el-col>商业应用</el-col>
+               <el-col>关于我们</el-col>
+             </el-row>
+           </el-col>
+           <el-col :span="10">
+             <el-row>
+               <el-col style="margin-top:20px;">
+                 <img src="../../assets/bottom_logo.png" alt="" style="width:200px">
+               </el-col>
+             </el-row>
+           </el-col>
+         </el-row>
+        </el-row>
+      </el-row>
+      <!-- 链接 -->
     </el-main>
 
     <!--底部-->
-    <el-footer>Footer</el-footer>
+    <el-footer>Powered by EduSoho v8.0.16 ©2014-2018 好知网 课程存档</el-footer>
   </el-container>
 </template>
 
@@ -319,6 +415,10 @@ a {
   text-decoration: none;
   color: #fff;
 }
+img{
+  width: 100%;
+  height: 100%;
+}
 .el-header,
 .el-footer {
   background-color: #555d69;
@@ -348,7 +448,7 @@ a {
   width: 60%;
   text-align: left;
   margin: 50px auto;
-  background: rgb(238, 195, 195);
+  // background: rgb(238, 195, 195);
 }
 .detail_content {
   margin-top: 20px;
@@ -375,7 +475,6 @@ a {
     background: pink;
     width: 90%;
     margin: 10px auto; 
-    padding: 5px;
     height: 60%;
   }
   .titles{
@@ -399,9 +498,9 @@ a {
   color:#919191;
 }
 .class_all{
-  // border: 1px solid #e4ecf3;
+  border: 1px solid #e4ecf3;
   border-radius: 7px 7px 0 0;
-  background: #fff;
+  // background: #fff;
   margin: 20px 0;
   transition: all 0.3s ease;
   height: 270px;
@@ -429,7 +528,7 @@ a {
   height: 100%;
 }
 .class_all_imgs_s:hover{
-  opacity: 0.1;
+  opacity: 0.2;
 }
 .gos{
   transition: all 0.3s ease;
@@ -455,5 +554,42 @@ a {
   margin: 10px 0;
   // border: 1px solid red;
   height: 60px;
+}
+.teachers{
+  margin-top: 10px;
+  border-radius: 7px;
+  background: rgb(204, 173, 173);
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.teacher_s{
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  // height: 400px;
+  // background: rgb(179, 197, 193);
+}
+.teachers_nick{
+  border-radius: 7px 7px 0 0;
+  height: 80%;
+  background: #f5f8fa;
+}
+.teachers_nicks{
+  margin: 0px auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.teachers:hover{
+  transform: translateY(-8px);
+    box-shadow: 1px 12px 8px rgba(161, 161, 161, 0.664);
+}
+.links{
+  margin-top: 20px;
+  width: 100%;
+  background: rgb(139, 139, 139);
+  // height: 300px;
 }
 </style>
