@@ -49,7 +49,7 @@
     </el-header>
 
     <!--内容-->
-    <el-main>
+    <el-main style="margin:0;padding:0;">
       <el-row :xs="24" :sm="24" :md="24" :lg="24">
         <el-col>
           <swiper :options="swiperOption" ref="mySwiper">
@@ -65,10 +65,10 @@
       </el-row>
       <!-- 课程 -->
       <el-row :xs="24" :sm="24" :md="24" :lg="24" class="widths">
-        <el-col>
+        <el-col style="text-align:center">
           <div>
             <h5 style="font-size:32px; font-weight:400;padding:20px 0 10px 0">网校课程</h5>
-            <p>精选网校课程，满足你的学习兴趣。</p>
+            <p class="vice">精选网校课程，满足你的学习兴趣。</p>
           </div>
         </el-col>
         <el-col :xs="12" :sm="12" :md="12" :lg="12" style="margin-top:30px">
@@ -151,6 +151,116 @@
           <el-button>更多课程<i class="el-icon-arrow-right"></i></el-button>
         </el-col>
       </el-row>
+      <!-- 广告 -->
+      <el-row>
+        <el-col>
+          <div class="adv"></div>
+        </el-col>
+      </el-row>
+      <!-- 班级 -->
+      <el-row :xs="24" :sm="24" :md="24" :lg="24" class="widths">
+        <el-col style="text-align:center">
+          <div>
+            <h5 style="font-size:32px; font-weight:400;padding:20px 0 10px 0">推荐班级</h5>
+            <p class="vice">班级化学习体系，给你更多的课程相关服务。</p>
+          </div>
+        </el-col>
+        <el-row :gutter="20">
+          <el-col :xs="24" :sm="12" :md="6" :lg="6">
+              <div class="class_all">
+                <div class="class_all_imgs">
+                  <img src="../../assets/111.jpg" alt="" class="class_all_imgs_s">
+                  <p class="gos"><el-button size="mini" style="background:orange;color:#fff;">立即加入</el-button></p>
+                </div>
+                <div class="class_all_title">使用教程</div>
+                <div class="class_all_vice">副标题</div>
+              </div>
+            </el-col>
+        </el-row>
+      </el-row>
+      <el-row>
+          <el-col>
+            <el-button>更多班级<i class="el-icon-arrow-right"></i></el-button>
+          </el-col>
+      </el-row>
+      <!-- 小组 -->
+      <el-row style="width:100%; background:#f5f8fa; margin-top:20px" >
+        <el-row :xs="24" :sm="24" :md="24" :lg="24" class="widths">
+          <el-col style="text-align:center">
+            <div>
+              <h5 style="font-size:32px; font-weight:400;padding:20px 0 10px 0">动态</h5>
+              <p class="vice">参与小组，结交更多同学，关注课程动态。</p>
+            </div>
+          </el-col>
+          <el-row :gutter="20">
+            <el-col :xs="24" :sm="24" :md="10" :lg="10" class="group_left">
+              <el-row class="group_left_title">
+                <el-col :xs="24" :sm="24" :md="12" :lg="12">热门小组</el-col>
+                <el-col :xs="24" :sm="24" :md="12" :lg="12" style="text-align:right"><i class="el-icon-d-arrow-right"></i></el-col>
+              </el-row>
+              <el-row>
+                <el-col :xs="24" :sm="24" :md="12" :lg="12" class="left_left">
+                   <el-col :xs="6" :sm="6" :md="6" :lg="6" style="height:100%;">
+                     <img src="../../assets/111.jpg" alt="" style="width:100%; height:100%;">
+                   </el-col>
+                   <el-col :xs="18" :sm="18" :md="18" :lg="18">
+                     <div style="margin-left:10px;">
+                       <div style="margin-bottom:10px;">学习圈</div>
+                       <div>
+                         <i class="el-icon-star-on" style="margin-right:10px;"><span>111</span></i>
+                         <i class="el-icon-star-on"><span>111</span></i>
+                        </div>
+                     </div>
+                   </el-col>
+                </el-col>
+                <el-col :xs="24" :sm="24" :md="12" :lg="12" class="left_left">
+                   <el-col :xs="6" :sm="6" :md="6" :lg="6" style="height:100%;">
+                     <img src="../../assets/111.jpg" alt="" style="width:100%; height:100%;">
+                   </el-col>
+                   <el-col :xs="18" :sm="18" :md="18" :lg="18">
+                     <div style="margin-left:10px;">
+                       <div style="margin-bottom:10px;">学习圈</div>
+                       <div>
+                         <i class="el-icon-star-on" style="margin-right:10px;"><span>111</span></i>
+                         <i class="el-icon-star-on"><span>111</span></i>
+                        </div>
+                     </div>
+                   </el-col>
+                </el-col>
+                <el-col :xs="24" :sm="24" :md="12" :lg="12" class="left_left">
+                   <el-col :xs="6" :sm="6" :md="6" :lg="6" style="height:100%;">
+                     <img src="../../assets/111.jpg" alt="" style="width:100%; height:100%;">
+                   </el-col>
+                   <el-col :xs="18" :sm="18" :md="18" :lg="18">
+                     <div style="margin-left:10px;">
+                       <div style="margin-bottom:10px;">学习圈</div>
+                       <div>
+                         <i class="el-icon-star-on" style="margin-right:10px;"><span>111</span></i>
+                         <i class="el-icon-star-on"><span>111</span></i>
+                        </div>
+                     </div>
+                   </el-col>
+                </el-col>
+              </el-row>
+            </el-col>
+            <el-col :xs="24" :sm="24" :md="10" :lg="10" class="group_right">
+              <el-row class="group_left_title">
+                <el-col :xs="12" :sm="12" :md="12" :lg="12">最新小组信息</el-col>
+                <el-col :xs="12" :sm="12" :md="12" :lg="12" style="text-align:right"><i class="el-icon-d-arrow-right"></i></el-col>
+              </el-row>
+              <el-row :gutter="20" :xs="24" :sm="24" :md="9" :lg="9">
+                <el-col :xs="24" :sm="24" :md="9" :lg="9" style="margin-top:10px;">
+                   <img src="../../assets/111.jpg" alt="" style="width:100%; height:100%;">
+                </el-col>
+                <el-col :xs="12" :sm="12" :md="11" :lg="11" style="margin-top:10px; border:1px solid red; overflow:hidden">ss888888888888888888888888ss
+                </el-col>
+                <el-col :xs="12" :sm="12" :md="4" :lg="4" style="margin-top:10px; text-align:right;">2015.2.2</el-col>
+              </el-row>
+            </el-col>
+          </el-row>
+        </el-row>
+        <!-- 推荐 -->
+      </el-row>
     </el-main>
 
     <!--底部-->
@@ -216,7 +326,7 @@ a {
   line-height: 60px;
 }
 .el-main {
-  background-color: #e9eef3;
+  background-color: #fff;
   color: #333;
   text-align: center;
   /*line-height: 160px;*/
@@ -234,7 +344,7 @@ a {
   height: 400px;
 }
 .widths {
-  width: 90%;
+  width: 60%;
   text-align: left;
   margin: 50px auto;
   background: rgb(238, 195, 195);
@@ -277,5 +387,72 @@ a {
 }
 .eve{
   cursor: pointer;
+}
+.adv{
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  background: #a4e6ec;
+}
+.vice{
+  color:#919191;
+}
+.class_all{
+  // border: 1px solid #e4ecf3;
+  border-radius: 7px 7px 0 0;
+  background: #fff;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  height: 270px;
+  cursor: pointer;
+  text-align: center;
+  color: #616161;
+}
+.class_all_imgs{
+  border-radius: 7px 7px 0 0;
+  background: #000;
+  width: 100%;
+  height: 60%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  
+}
+.class_all_title{
+  margin: 25px 0;
+}
+.class_all_vice{
+  font-size: 14px;
+}
+.class_all_imgs_s{
+  width: 100%;
+  height: 100%;
+}
+.class_all_imgs_s:hover{
+  opacity: 0.1;
+}
+.gos{
+  transition: all 0.3s ease;
+}
+.class_all_imgs_s:hover+.gos{
+  transition: all 0.3s ease;
+  margin-top: -100px;
+}
+.group_left, .group_right{
+  background: #fff;
+  width: 50%;
+  height: 300px;
+}
+.group_right{
+  //  background: red;
+}
+.group_left_title{
+  border-bottom: 1px solid #919191;
+  font-size: 18px;
+  padding: 10px;
+}
+.left_left{
+  margin: 10px 0;
+  // border: 1px solid red;
+  height: 60px;
 }
 </style>
