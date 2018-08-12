@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
+  linkActiveClass:"active",
   routes: [
     {
       path: '/login',
@@ -22,7 +23,30 @@ const router = new Router({
       path:'/',
       meta:{auth:true},
       name:'home',
-      component:resolve => require(['@/components/home/home.vue'], resolve)
+      redirect:"/home",
+      component:resolve => require(['@/components/home/home.vue'], resolve),
+      children:[
+        {
+          path:'/shou',
+          meta:{auth:true},
+          name:'shou',
+          component:resolve => require(['@/components/shou/shou.vue'], resolve)
+        },
+        {
+          // 课程详情
+          path:'/details',
+          meta:{auth:true},
+          name:'details',
+          component:resolve => require(['@/components/details/details.vue'], resolve)
+        },
+        {
+          // 更多课程
+          path:'/more_course',
+          meta:{auth:true},
+          name:'more_course',
+          component:resolve => require(['@/components/more_course/more_course.vue'], resolve)
+        }
+      ]
     }
   ]
 });
