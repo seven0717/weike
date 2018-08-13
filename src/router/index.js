@@ -33,7 +33,14 @@ const router = new Router({
           component:resolve => require(['@/components/shou/shou.vue'], resolve)
         },
         {
-          // 课程详情
+          // 学习详情
+          path:'/study',
+          meta:{auth:true},
+          name:'study',
+          component:resolve => require(['@/components/study/study.vue'], resolve)
+        },
+        {
+          // 班级详情
           path:'/details',
           meta:{auth:true},
           name:'details',
@@ -45,6 +52,27 @@ const router = new Router({
           meta:{auth:true},
           name:'more_course',
           component:resolve => require(['@/components/more_course/more_course.vue'], resolve)
+        },
+        {
+          // 更多班级
+          path:'/more_class',
+          meta:{auth:true},
+          name:'more_class',
+          component:resolve => require(['@/components/more_class/more_class.vue'], resolve)
+        },
+        {
+          // 更多老师
+          path:'/more_teacher',
+          meta:{auth:true},
+          name:'more_teacher',
+          component:resolve => require(['@/components/more_teacher/more_teacher.vue'], resolve)
+        },
+        {
+          // 资讯
+          path:'/msg',
+          meta:{auth:true},
+          name:'msg',
+          component:resolve => require(['@/components/msg/msg.vue'], resolve)
         }
       ]
     }

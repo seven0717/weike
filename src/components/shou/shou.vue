@@ -40,7 +40,7 @@
         <!-- 详情 -->
         <el-col class="eve">
           <el-row :gutter="20">
-            <router-link tag="li" to="/details">
+            <router-link tag="li" to="/study">
               <el-col :xs="24" :sm="12" :md="6" :lg="6">
                 <div class="bg-purple">
                   <div class="imgs">
@@ -73,6 +73,7 @@
           </div>
         </el-col>
         <el-row :gutter="20">
+          <router-link tag="li" to="/details">
           <el-col :xs="24" :sm="12" :md="6" :lg="6">
               <div class="class_all">
                 <div class="class_all_imgs">
@@ -83,11 +84,12 @@
                 <div class="class_all_vice">副标题</div>
               </div>
             </el-col>
+          </router-link>
         </el-row>
       </el-row>
       <el-row>
           <el-col>
-            <router-link  tag="a" to="/more_course"><el-button>更多班级<i class="el-icon-arrow-right"></i></el-button></router-link>
+            <router-link  tag="a" to="/more_class"><el-button>更多班级<i class="el-icon-arrow-right"></i></el-button></router-link>
           </el-col>
       </el-row>
       <!-- 小组 -->
@@ -181,84 +183,29 @@
         </el-row >
         <el-row class="teacher_s">
           <el-row :gutter="20">
-          <el-col :xs="24" :sm="12" :md="6" :lg="6" style="margin-top:10px;">
-            <div class="teachers">
-              <div class="teachers_nick">
-                <div>
-                  <img src="../../assets/nick.jpg" alt="" class="teachers_nicks">
+            <router-link tag="li" to="#">
+              <el-col :xs="24" :sm="12" :md="6" :lg="6" style="margin-top:10px;">
+                <div class="teachers">
+                  <div class="teachers_nick">
+                    <div>
+                      <img src="../../assets/nick.jpg" alt="" class="teachers_nicks">
+                    </div>
+                    <p style="font-weight:700;">Phil</p>
+                      <p style="color:#919191;font-size:14px">阔知网络联合创始人</p>
+                  </div>
+                  <div style="color:#919191;font-size:14px">主要负责好知网的运营工作。 英国卡迪夫大学新闻学硕士，原浙江...</div>
                 </div>
-                <p style="font-weight:700;">Phil</p>
-                  <p style="color:#919191;font-size:14px">阔知网络联合创始人</p>
-              </div>
-              <div style="color:#919191;font-size:14px">主要负责好知网的运营工作。 英国卡迪夫大学新闻学硕士，原浙江...</div>
-            </div>
-          </el-col>
-          <el-col :xs="24" :sm="12" :md="6" :lg="6" style="margin-top:10px;">
-            <div class="teachers">
-              <div class="teachers_nick">
-                <div>
-                  <img src="../../assets/nick.jpg" alt="" class="teachers_nicks">
-                </div>
-                <p style="font-weight:700;">Phil</p>
-                  <p style="color:#919191;font-size:14px">阔知网络联合创始人</p>
-              </div>
-              <div style="color:#919191;font-size:14px">主要负责好知网的运营工作。 英国卡迪夫大学新闻学硕士，原浙江...</div>
-            </div>
-          </el-col>
-        </el-row>
+              </el-col>
+            </router-link>
+          </el-row>
         </el-row>
           <el-row >
             <el-col>
-              <router-link  tag="a" to="/more_course"><el-button>更多教师<i class="el-icon-arrow-right"></i></el-button></router-link>
+              <router-link  tag="a" to="/more_teacher"><el-button>更多教师<i class="el-icon-arrow-right"></i></el-button></router-link>
             </el-col>
         </el-row>
       </el-row>
       <!-- 推荐 -->
-      <!-- 链接 -->
-      <el-row class="links">
-        <el-row class="">
-         <el-row>
-           <el-col :span="14">
-             <el-row type="flex" justify="space-around" style="margin:20px 0;">
-               <el-col>我是学生</el-col>
-               <el-col >我是老师</el-col>
-               <el-col>我是管理员</el-col>
-               <el-col>商业应用</el-col>
-               <el-col>关于我们</el-col>
-             </el-row>
-             <el-row type="flex" justify="space-around" style="margin:20px 0;">
-               <el-col>如何注册</el-col>
-               <el-col>发布课程</el-col>
-               <el-col>修改底部链接</el-col>
-               <el-col>会员专区</el-col>
-               <el-col>ES官网</el-col>
-             </el-row>
-             <el-row type="flex" justify="space-around" style="margin:20px 0;">
-               <el-col>我是学生</el-col>
-               <el-col>我是老师</el-col>
-               <el-col>我是管理员</el-col>
-               <el-col>商业应用</el-col>
-               <el-col>关于我们</el-col>
-             </el-row>
-             <el-row type="flex" justify="space-around" style="margin:20px 0;">
-               <el-col>我是学生</el-col>
-               <el-col>我是老师</el-col>
-               <el-col>我是管理员</el-col>
-               <el-col>商业应用</el-col>
-               <el-col>关于我们</el-col>
-             </el-row>
-           </el-col>
-           <el-col :span="10">
-             <el-row>
-               <el-col style="margin-top:20px;">
-                 <img src="../../assets/bottom_logo.png" alt="" style="width:200px">
-               </el-col>
-             </el-row>
-           </el-col>
-         </el-row>
-        </el-row>
-      </el-row>
-      <!-- 链接 -->
   </el-row>
 </template>
 
@@ -477,10 +424,5 @@ img{
   transform: translateY(-8px);
     box-shadow: 1px 12px 8px rgba(161, 161, 161, 0.664);
 }
-.links{
-  margin-top: 20px;
-  width: 100%;
-  background: rgb(139, 139, 139);
-  // height: 300px;
-}
+
 </style>
