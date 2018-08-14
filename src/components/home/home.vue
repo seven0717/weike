@@ -20,13 +20,13 @@
         <span class="el-dropdown-link">
           班级<i class="el-icon-caret-bottom el-icon--right"></i>
         </span>
-        <!-- <el-dropdown-menu slot="dropdown">
+        <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>班级1</el-dropdown-item>
           <el-dropdown-item>班级2</el-dropdown-item>
           <el-dropdown-item>班级3</el-dropdown-item>
           <el-dropdown-item>班级4</el-dropdown-item>
           <el-dropdown-item>班级5</el-dropdown-item>
-        </el-dropdown-menu> -->
+        </el-dropdown-menu>
       </el-dropdown>
       <el-dropdown>
         <span class="el-dropdown-link">
@@ -45,6 +45,7 @@
         <el-input size="small" style="width: 200px; margin-right: 100px"></el-input>
         <router-link to="login" tag="a" style="margin-right: 40px">登陆</router-link>
         <router-link to="login" tag="a">注册</router-link>
+        <router-link to="admin" tag="a">后台</router-link>
       </span>
     </el-header>
 

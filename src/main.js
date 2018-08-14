@@ -7,9 +7,11 @@ import router from './router'
 // 外部引入组件
 import vuex from 'vuex'
 import Axios from 'axios';
+import vPlayBack from 'v-playback';
+Vue.use(vPlayBack);
 import 'element-ui/lib/theme-chalk/display.css';
 import { Button,Tabs,TabPane,Row,Col,Form,FormItem,Input,Message,Switch,Container,Header,Main,Footer,Dropdown, DropdownMenu,
-          DropdownItem,Radio,RadioGroup,RadioButton,Card,Progress } from 'element-ui';
+          DropdownItem,Radio,RadioGroup,RadioButton,Card,Progress,Upload } from 'element-ui';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import 'element-ui/lib/theme-chalk/index.css';
@@ -34,6 +36,7 @@ Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(RadioButton)
 Vue.use(Card)
+Vue.use(Upload)
 Vue.use(Progress)
 Vue.prototype.$axios = Axios;
 Vue.prototype.$message = Message;

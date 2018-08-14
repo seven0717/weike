@@ -73,6 +73,43 @@ const router = new Router({
           meta:{auth:true},
           name:'msg',
           component:resolve => require(['@/components/msg/msg.vue'], resolve)
+        },
+        {
+          // 后台
+          path:'/admin',
+          meta:{auth:true},
+          name:'admin',
+          component:resolve => require(['@/components/admin/admin.vue'], resolve),
+          children:[
+            {
+              // ols
+              path:'ols',
+              meta:{auth:true},
+              name:'ols',
+              component:resolve => require(['@/components/admin/admin/ols.vue'], resolve)
+            },
+            {
+              // 所教班级
+              path:'ols_class',
+              meta:{auth:true},
+              name:'ols_class',
+              component:resolve => require(['@/components/admin/admin/ols_class.vue'], resolve)
+            },
+            {
+              // 学员问答
+              path:'ols_que',
+              meta:{auth:true},
+              name:'ols_que',
+              component:resolve => require(['@/components/admin/admin/ols_que.vue'], resolve)
+            }
+          ]
+        },
+        {
+          // 播放
+          path:'/video',
+          meta:{auth:true},
+          name:'video',
+          component:resolve => require(['@/components/video/video.vue'], resolve)
         }
       ]
     }
