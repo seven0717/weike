@@ -55,11 +55,11 @@
                 <li>03</li>
               </ul>
             </el-tab-pane>
-            <el-tab-pane label="讨论区" name="third">笔记</el-tab-pane>
+            <el-tab-pane label="讨论区" name="third">讨论区</el-tab-pane>
             <el-tab-pane label="笔记" name="thir">笔记</el-tab-pane>
-            <el-tab-pane label="资料" name="thid">笔记</el-tab-pane>
+            <el-tab-pane label="资料" name="thid">资料</el-tab-pane>
             <el-tab-pane label="评价" name="fourth">评价</el-tab-pane>
-            <el-tab-pane label="介绍" name="fourt">评价</el-tab-pane>
+            <el-tab-pane label="介绍" name="fourt">介绍</el-tab-pane>
           </el-tabs>
           </div>
         </el-col>
