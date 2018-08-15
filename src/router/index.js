@@ -27,7 +27,7 @@ const router = new Router({
       component:resolve => require(['@/components/home/home.vue'], resolve),
       children:[
         {
-          path:'/shou',
+          path:'',
           meta:{auth:true},
           name:'shou',
           component:resolve => require(['@/components/shou/shou.vue'], resolve)
